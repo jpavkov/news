@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     # Local
     "accounts",
     "pages",
+    "articles",
 ]
+
+TIME_ZONE = "America/New_York"  # new
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

@@ -8,7 +8,11 @@
 <!-- new code here! -->
 Hi {{ user.username }}! You are {{ user.age }} years old.
 <!-- end of new code -->
-<p><a href="{% url 'logout' %}">Log Out</a></p> {% else %}
+<p><a href="{% url 'logout' %}">Log Out</a></p>
+
+<a href="{% url 'article_list' %}" class="btn btn-primary btn-lg" role="button">View all articles</a>
+
+{% else %}
 <p>You are not logged in</p>
 <a href="{% url 'login' %}">Log In</a> |
 <a href="{% url 'signup' %}">Sign Up</a>
