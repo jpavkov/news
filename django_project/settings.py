@@ -29,8 +29,8 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = [".fly.dev", "localhost", "127.0.0.1"]  # new
-CSRF_TRUSTED_ORIGINS = ["https://*.fly.dev"]  # new
+ALLOWED_HOSTS = ["jdp-news-blog.fly.dev", "localhost", "127.0.0.1"]  # new
+CSRF_TRUSTED_ORIGINS = ["https://jdp-news-blog.fly.dev"]  # new
 
 
 # Application definition
